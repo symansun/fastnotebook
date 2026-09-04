@@ -4,6 +4,10 @@
   <p>
     <strong>极简 notebook 托管平台</strong> —— 拖入本地 <code>.ipynb</code> 文件，一键在 JupyterLab 中打开运行
   </p>
+  <p>
+    <a href="https://github.com/symansun/fastnotebook/actions/workflows/ci.yml"><img src="https://github.com/symansun/fastnotebook/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+    <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-orange" alt="MIT License" /></a>
+  </p>
 </div>
 
 ---
