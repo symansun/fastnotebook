@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFBF5"/>
+      <stop offset="1" stop-color="#FFEFE0"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFB25E"/>
+      <stop offset="0.55" stop-color="#F97316"/>
+      <stop offset="1" stop-color="#E04E0A"/>
+    </linearGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFF1E4"/>
+    </linearGradient>
+    <radialGradient id="sheen" cx="0.28" cy="0.18" r="0.75">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="wordgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FB923C"/>
+      <stop offset="1" stop-color="#EA580C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FDBA74" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#FDBA74" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 装饰光斑 -->
+  <circle cx="1060" cy="90" r="260" fill="url(#glow)"/>
+  <circle cx="80" cy="580" r="220" fill="url(#glow)"/>
+
+  <!-- 装饰网格点 -->
+  <g fill="#F97316" opacity="0.10">
+    <circle cx="980" cy="470" r="5"/><circle cx="1030" cy="470" r="5"/><circle cx="1080" cy="470" r="5"/><circle cx="1130" cy="470" r="5"/>
+    <circle cx="980" cy="520" r="5"/><circle cx="1030" cy="520" r="5"/><circle cx="1080" cy="520" r="5"/><circle cx="1130" cy="520" r="5"/>
+    <circle cx="980" cy="570" r="5"/><circle cx="1030" cy="570" r="5"/><circle cx="1080" cy="570" r="5"/><circle cx="1130" cy="570" r="5"/>
+  </g>
+
+  <!-- LOGO 徽章（240px，与 favicon 完全一致的比例） -->
+  <g transform="translate(110,195) scale(0.46875)">
+    <rect x="24" y="24" width="464" height="464" rx="110" fill="url(#badge)"/>
+    <rect x="24" y="24" width="464" height="464" rx="110" fill="url(#sheen)"/>
+    <rect x="138" y="166" width="42" height="18" rx="9" fill="#FFE3C7"/>
+    <rect x="138" y="247" width="42" height="18" rx="9" fill="#FFE3C7"/>
+    <rect x="138" y="328" width="42" height="18" rx="9" fill="#FFE3C7"/>
+    <rect x="164" y="112" width="204" height="288" rx="30" fill="url(#page)"/>
+    <path d="M 292 156 L 202 276 L 250 276 L 226 356 L 334 232 L 282 232 Z" fill="url(#badge)"/>
+  </g>
+
+  <!-- 字标 -->
+  <text x="400" y="300" font-family="Helvetica Neue, Arial, PingFang SC, sans-serif" font-size="96" font-weight="800" letter-spacing="-2">
+    <tspan fill="url(#wordgrad)">Fast</tspan><tspan fill="#1C1917">Notebook</tspan>
+  </text>
+
+  <!-- Slogan -->
+  <text x="402" y="380" font-family="PingFang SC, Helvetica Neue, Arial, sans-serif" font-size="40" font-weight="500" fill="#57534E">上传 .ipynb，一键在 JupyterLab 中运行</text>
+
+  <!-- 标签 pill -->
+  <g>
+    <rect x="402" y="424" width="282" height="54" rx="27" fill="#FFEDD5" stroke="#FDBA74" stroke-width="2"/>
+    <text x="543" y="460" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#C2410C">.ipynb → JupyterLab</text>
+  </g>
+  <g>
+    <rect x="702" y="424" width="200" height="54" rx="27" fill="#FFEDD5" stroke="#FDBA74" stroke-width="2"/>
+    <text x="802" y="460" text-anchor="middle" font-family="PingFang SC, Helvetica Neue, Arial, sans-serif" font-size="26" font-weight="600" fill="#C2410C">极简 · 即用</text>
+  </g>
+</svg>
